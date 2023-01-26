@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battleship</title>
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="replay fade-out preload" id="hidden">
+        <p class="winner"></p>
+        <button class="rotating" id="replay">
+            <img class="replay-image" alt="replay">
+        </button>
+    </div>
+    <div class="game">
+        <div class="player" id="one">
+            <div class="title">
+                <h3>Player 1</h3>
+            </div>
+            <div class="remaining">
+                <h4>Remaining</h4>
+                <div class="remaining-ships">
+                    <div class="five horizontal">
+                    </div>
+
+                    <div class="four horizontal">
+                    </div>
+
+                    <div class="three horizontal">
+                    </div>
+
+                    <div class="two horizontal">
+                    </div>
+                    
+                    <div class="two horizontal">
+                    </div>
+                </div>
+            </div>
+            <div class="gameboard"></div>
+            <div class="ships" id="horizontal">
+                <div class="ship five horizontal" draggable="true"></div>
+                <div class="ship four horizontal" draggable="true"></div>
+                <div class="ship three horizontal" draggable="true"></div>
+                <div class="ship two horizontal" draggable="true"></div>
+                <div class="ship two horizontal" draggable="true"></div>
+            </div>
+        </div>
+        <button id="start" disabled=true>
+            <img class="start-image" id="disabled" src="#" alt="start">
+        </button>
+        <div class="player" id="two">
+            <div class="title">
+                <h3>Player 2</h3>
+            </div>
+            <div class="remaining">
+                <h4>Remaining</h4>
+                <div class="remaining-ships">
+                    <div class="five horizontal">
+                    </div>
+
+                    <div class="four horizontal">
+                    </div>
+
+                    <div class="three horizontal">
+                    </div>
+
+                    <div class="two horizontal">
+                    </div>
+                    
+                    <div class="two horizontal">
+                    </div>
+                </div>            
+            </div>
+            <div class="gameboard"></div>
+        </div>
+    </div>
+    <div class="info">
+        <div class="info-text">
+            <h5>Play a game of battleship!</h5>
+            <ul>
+                <li>You are player one; Place a ship by dragging it from the <span>blue area</span> onto an open space on your board</li>
+                <li>Double click a ship to rotate it</li>
+                <li>Once all ships have been placed, press start and click on the opponent's board to play!</li>
+            </ul>
+        </div>
+        <p class="question-mark">Help!</p>
+    </div>
+</body>
+</html>
